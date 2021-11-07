@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import HistoryQueries from "./components/HistoryQueries/HistoryQueries";
+import Scoreboard from "./components/Scoreboard/Scoreboard";
+import SearchInput from "./components/SearchInput/SearchInput";
+import WeeklyForecast from "./components/WeeklyForecast/WeeklyForecast";
+
+import Container from './hoc/Container/Container';
+
+import classes from './App.module.scss';
+import './index.module.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Container>
+			<h1 className={classes['Title']}>Weather Forecast</h1>
+
+			<div className={classes['RowHeader']}>
+				<SearchInput />
+				<Scoreboard />
+			</div>
+
+			<HistoryQueries />
+			<WeeklyForecast />
+		</Container>
+	);
 }
 
 export default App;

@@ -1,0 +1,37 @@
+@import '/src/scss/helpers/variables';
+
+.WeeklyForecastItem {
+   width: 250px;
+   height: 250px;
+   background-color: $GREY;
+   text-align: center;
+   border: 1px solid $BLUE;
+   border-radius: 7px;
+
+   div {
+      margin-top: 50%;
+      transform: translateY(-50%);
+   }
+}
+
+@media (max-width: 1440px) {
+   .WeeklyForecastItem {
+      width: 200px;
+      height: 200px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .WeeklyForecastItem {
+      width: 180px;
+      height: 180px;
+   }
+}
+
+@media (max-width: 991px) {
+   .WeeklyForecastItem {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+   }
+}

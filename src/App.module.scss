@@ -1,0 +1,16 @@
+.Title {
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.RowHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+   .RowHeader {
+		flex-wrap: wrap;
+   }
+}
