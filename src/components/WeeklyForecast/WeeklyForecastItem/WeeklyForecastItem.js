@@ -20,7 +20,7 @@ const WeeklyForecastItem = ({date, temp}) => {
       <div className={classes['WeeklyForecastItem']}>
          <div className="info">
             <h2>{days[dayOfTheWeek]}</h2>
-            <h2>{temperature}°С</h2>
+            <h3>{temperature}°С</h3>
          </div>
       </div>
    );
